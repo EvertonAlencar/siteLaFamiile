@@ -1,0 +1,150 @@
+@font-face {
+  font-family: 'LaFamiile';
+  src: url('/Fonts/shopie/Shopie.otf') format('truetype');
+  font-weight: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+}
+
+.main-menu{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    color: white;
+    backdrop-filter: blur(5px);
+    border-bottom: solid 3px;
+    border-color: rgba(244,182,48, 0.8);
+    z-index: 3;
+}
+
+.toast-menu{
+    display: none;
+    width: 10%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.toast-menu-button {
+    width: 50px;
+    height: 50px;
+}
+
+.logo-img {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo-img img {
+    height: 100%;
+}
+.main-menu ul {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style: none;
+}
+
+.main-menu ul li {
+    cursor: pointer;
+}
+
+.hero-section{
+    width: 100%;
+    height: 700px;
+    background-image: url("../Imgs/hero-img-2.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.hero-text {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    z-index: 2;
+}
+.hero-shadow {
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.hero-text h2 {
+    margin-left: 100px;
+    font-size: 20pt;
+    text-shadow: -8px 1px 20px black ;
+}
+
+.hero-text h1 {
+    font-family: 'LaFamiile';
+    margin-left: 150px;
+    font-size: 100px;
+    font-weight: 500;
+    border-bottom: double 5px;
+    text-shadow: -8px 1px 20px black ;
+    border-color: rgba(244,182,48, 0.8);
+}
+
+.hero-section img{
+    width: 100%;
+}
+
+@media (max-width: 700px) {
+
+    .main-menu {
+        justify-content: space-between;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .toast-menu {
+        display: flex;
+    }
+
+    .main-menu ul {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .hero-text {
+        align-items: center;
+    }
+
+    .hero-text h1 {
+        margin-left: 0px;
+    }
+    .hero-text h2 {
+        margin-left: 0px;
+    }
+}
+
