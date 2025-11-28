@@ -111,6 +111,45 @@ body {
     transition: 1s;
 }
 
+.main-menu .dropdown-menu {
+    width: 100%;
+    height: 35vw;
+    background-color: rgba(0, 0, 0, 1);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    margin-top: 46vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid rgb(244,182,48);;
+}
+
+.main-menu .dropdown-menu {
+    display: none;
+}
+
+.main-menu .dropdown-menu ul {
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.main-menu .dropdown-menu ul li a{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.main-menu .dropdown-menu ul li {
+    width: 100%;
+    border-bottom: solid 1px white;
+}
+
 /*botão whatsapp*/
 .whatsapp {
     width: 100%;
